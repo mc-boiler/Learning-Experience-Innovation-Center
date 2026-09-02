@@ -1,0 +1,991 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  color:#000;
+  background:#fff;
+  line-height:1.6;
+}
+
+.container{
+  width:90%;
+  max-width:1500px;
+  margin:0 auto;
+}
+
+img{
+  max-width:100%;
+}
+
+/* HEADER */
+
+.global-header{
+  background:#fff;
+  border-bottom:1px solid #222;
+  min-height:86px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 40px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  height:100%;
+}
+
+.purdue-logo{
+  height:58px;
+  width:auto;
+  display:block;
+  margin-right:24px;
+}
+
+.brand-divider{
+  width:1px;
+  height:46px;
+  background:#777;
+  margin-right:24px;
+}
+
+.site-title{
+  font-size:28px;
+  font-weight:900;
+  letter-spacing:-.5px;
+  color:#000;
+}
+
+.utility-icons{
+  font-size:30px;
+  letter-spacing:6px;
+  color:#fff;
+}
+
+/* NAV */
+
+.page-nav{
+  background:#e8e8e8;
+  border-bottom:1px solid #d2d2d2;
+  min-height:56px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 38px;
+  gap:20px;
+}
+
+.page-nav-links{
+  display:flex;
+  gap:30px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.page-nav-links a{
+  text-decoration:none;
+  color:#000;
+  font-size:14px;
+  font-weight:900;
+}
+
+.page-nav-links a.active{
+  border-bottom:4px solid #CFB991;
+  padding-bottom:5px;
+}
+
+.partner-button{
+  background:#000;
+  color:#fff;
+  text-decoration:none;
+  padding:12px 24px;
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:.6px;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+
+/* HERO */
+
+.hero-split{
+  display:grid;
+  grid-template-columns:54% 46%;
+  min-height:690px;
+  overflow:hidden;
+  background:#fff;
+}
+
+.hero-left{
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  padding:80px 90px 80px 40px;
+  position:relative;
+  z-index:2;
+}
+
+.hero-left:after{
+  content:"";
+  position:absolute;
+  top:0;
+  right:-95px;
+  width:190px;
+  height:100%;
+  background:#fff;
+  transform:skewX(-10deg);
+  z-index:-1;
+}
+
+.hero-content{
+  max-width:740px;
+}
+
+.hero-kicker{
+  display:inline-block;
+  background:#CFB991;
+  color:#000;
+  padding:12px 38px;
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  transform:skewX(-13deg);
+  margin-bottom:42px;
+}
+
+.hero-kicker span{
+  display:block;
+  transform:skewX(13deg);
+}
+
+.hero-content h1{
+  font-size:62px;
+  line-height:.98;
+  font-weight:900;
+  letter-spacing:-1.5px;
+  text-transform:uppercase;
+  margin-bottom:28px;
+}
+
+.hero-content p{
+  font-size:18px;
+  line-height:1.55;
+  max-width:700px;
+}
+
+.hero-right{
+  background:
+    linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),
+    url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80");
+  background-size:cover;
+  background-position:center;
+  min-height:690px;
+}
+
+/* BLACK BUTTON BAR */
+
+.hero-link-bar{
+  background:#000;
+  color:#fff;
+  padding:34px 0;
+}
+
+.hero-link-content{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.hero-link-content h2{
+  font-size:28px;
+  font-weight:900;
+}
+
+.quick-buttons{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.quick-buttons a{
+  background:#CFB991;
+  color:#000;
+  text-decoration:none;
+  padding:15px 25px;
+  font-size:13px;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+  box-shadow:0 2px 4px rgba(0,0,0,.25);
+}
+
+/* SEARCH */
+
+.search-section{
+  background:#fff;
+  padding:58px 0 68px;
+  text-align:center;
+  border-bottom:1px solid #efefef;
+}
+
+.search-section h2{
+  font-size:18px;
+  font-weight:900;
+  letter-spacing:2.5px;
+  margin-bottom:28px;
+  text-transform:uppercase;
+}
+
+.large-search{
+  width:70%;
+  max-width:1060px;
+  margin:0 auto;
+  display:flex;
+  background:#fff;
+  border:1px solid #e3e3e3;
+  box-shadow:0 2px 10px rgba(0,0,0,.15);
+}
+
+.search-icon{
+  width:86px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:44px;
+  color:#8E6F3E;
+}
+
+.large-search input{
+  flex:1;
+  border:none;
+  padding:26px 18px;
+  font-size:22px;
+  outline:none;
+}
+
+.large-search button{
+  background:#000;
+  color:#fff;
+  border:none;
+  padding:0 38px;
+  font-size:15px;
+  font-weight:900;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+
+/* SECTION BASE */
+
+.section{
+  padding:88px 0;
+}
+
+.section-heading-wrap{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  margin-bottom:50px;
+}
+
+.section-label{
+  background:#000;
+  color:#fff;
+  font-size:18px;
+  font-weight:900;
+  letter-spacing:5px;
+  text-transform:uppercase;
+  padding:14px 34px;
+  transform:skewX(-13deg);
+}
+
+.section-label span{
+  display:block;
+  transform:skewX(13deg);
+}
+
+.section-line{
+  height:4px;
+  background:#000;
+  flex:1;
+}
+
+.section-title{
+  font-size:48px;
+  font-weight:900;
+  margin-bottom:18px;
+}
+
+.section-subtitle{
+  font-size:18px;
+  color:#555;
+  max-width:850px;
+}
+
+/* SERVICES */
+
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:24px;
+  margin-top:45px;
+}
+
+.service-card{
+  background:#fff;
+  border:1px solid #dedede;
+  padding:34px;
+  min-height:260px;
+  position:relative;
+  transition:.2s;
+}
+
+.service-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 24px rgba(0,0,0,.12);
+}
+
+.service-card:before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:8px;
+  background:#CFB991;
+}
+
+.service-icon{
+  width:58px;
+  height:58px;
+  background:#000;
+  color:#CFB991;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:24px;
+  font-weight:900;
+}
+
+.service-card h3{
+  font-size:24px;
+  font-weight:900;
+  margin:22px 0 14px;
+}
+
+.service-card p{
+  font-size:16px;
+  color:#444;
+}
+
+/* IMPACT */
+
+.impact{
+  background:#f7f7f7;
+}
+
+.impact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  gap:26px;
+}
+
+.impact-stack{
+  display:grid;
+  grid-template-rows:1fr 1fr;
+  gap:26px;
+}
+
+.impact-card{
+  min-height:260px;
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 4px 14px rgba(0,0,0,.18);
+  background:#000;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.impact-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  position:absolute;
+  inset:0;
+}
+
+.impact-card:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.45);
+}
+
+.impact-content{
+  position:relative;
+  z-index:2;
+  padding:28px;
+}
+
+.impact-content h3{
+  font-size:20px;
+  font-weight:900;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  margin-bottom:16px;
+  color:#CFB991;
+}
+
+.impact-content p{
+  font-size:27px;
+  font-weight:900;
+  line-height:1.25;
+}
+
+.impact-number{
+  background:#CFB991;
+  color:#000;
+}
+
+.impact-number:after,
+.impact-black:after{
+  display:none;
+}
+
+.big-number{
+  font-size:88px;
+  font-weight:900;
+  line-height:1;
+  margin-bottom:16px;
+}
+
+.impact-black{
+  background:#000;
+  color:#fff;
+}
+
+/* TESTIMONIALS */
+
+.testimonials{
+  background:#fff;
+}
+
+.testimonial-card{
+  background:#f5f5f5;
+  border-left:8px solid #CFB991;
+  padding:48px;
+  max-width:1050px;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+.quote{
+  font-size:31px;
+  font-weight:800;
+  line-height:1.35;
+  margin-bottom:25px;
+}
+
+.author{
+  font-weight:900;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  color:#555;
+}
+
+/* EVENTS */
+
+.events-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:26px;
+  margin-top:45px;
+}
+
+.event-card{
+  border:1px solid #d8d8d8;
+  background:#fff;
+  padding:30px;
+}
+
+.event-date{
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:#6f6f6f;
+  margin-bottom:16px;
+}
+
+.event-card h3{
+  font-size:24px;
+  line-height:1.25;
+  font-weight:900;
+  margin-bottom:12px;
+}
+
+.event-card p{
+  color:#444;
+}
+
+.events-more{
+  margin-top:36px;
+  text-align:center;
+}
+
+.events-more a{
+  display:inline-block;
+  background:#CFB991;
+  color:#000;
+  text-decoration:none;
+  padding:16px 30px;
+  font-size:13px;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+  box-shadow:0 2px 5px rgba(0,0,0,.2);
+}
+
+/* NEWSROOM */
+
+.news-layout{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:34px;
+  align-items:start;
+}
+
+.feature-news img{
+  width:100%;
+  height:430px;
+  object-fit:cover;
+  display:block;
+  margin-bottom:24px;
+}
+
+.feature-news h3{
+  font-size:40px;
+  line-height:1.2;
+  font-weight:900;
+  margin-bottom:18px;
+}
+
+.news-date{
+  font-size:14px;
+  font-weight:900;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:#6f6f6f;
+}
+
+.news-list{
+  display:flex;
+  flex-direction:column;
+}
+
+.news-small{
+  display:grid;
+  grid-template-columns:230px 1fr;
+  gap:28px;
+  padding:0 0 28px;
+  margin-bottom:28px;
+  border-bottom:3px solid #cfcfcf;
+}
+
+.news-small img{
+  width:230px;
+  height:140px;
+  object-fit:cover;
+}
+
+.news-small h3{
+  font-size:27px;
+  line-height:1.25;
+  font-weight:900;
+  margin-bottom:18px;
+}
+
+.more-news{
+  display:inline-block;
+  align-self:flex-start;
+  background:#000;
+  color:#fff;
+  text-decoration:none;
+  font-weight:900;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  padding:15px 26px;
+}
+
+/* FINAL CTA */
+
+.prefooter-cta{
+  min-height:430px;
+  background:
+    linear-gradient(rgba(0,0,0,.68),rgba(0,0,0,.68)),
+    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=80");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+}
+
+.prefooter-cta-content{
+  max-width:1000px;
+  margin:auto;
+  padding:90px 5%;
+}
+
+.prefooter-kicker{
+  font-size:15px;
+  font-weight:900;
+  letter-spacing:5px;
+  text-transform:uppercase;
+  margin-bottom:24px;
+  color:#CFB991;
+}
+
+.prefooter-cta h2{
+  font-size:42px;
+  font-weight:900;
+  line-height:1.2;
+  margin-bottom:34px;
+}
+
+.prefooter-button{
+  display:inline-block;
+  border:1px solid #CFB991;
+  color:#fff;
+  text-decoration:none;
+  padding:15px 30px;
+  font-size:13px;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+}
+
+.prefooter-button:hover{
+  background:#CFB991;
+  color:#000;
+}
+
+/* REAL PURDUE-STYLE FOOTER */
+
+.footer{
+  position:relative;
+  color:#fff;
+  background-image:
+    linear-gradient(rgba(0,0,0,.82), rgba(0,0,0,.86)),
+    url("https://www.purdue.edu/home/wp-content/uploads/2023/09/DSC2463_lowres.jpg");
+  background-size:cover;
+  background-position:center;
+  padding:78px 0 42px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.footer-inner{
+  width:90%;
+  max-width:1400px;
+  margin:0 auto;
+}
+
+.footer-back-to-top{
+  position:absolute;
+  top:42px;
+  right:46px;
+  width:50px;
+  height:50px;
+  border:2px solid #CFB991;
+  border-radius:50%;
+  color:#CFB991;
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:31px;
+  line-height:1;
+}
+
+.footer-top{
+  display:grid;
+  grid-template-columns:210px 240px 260px 260px;
+  gap:55px;
+  align-items:start;
+  margin-bottom:58px;
+}
+
+.footer-purdue-logo{
+  width:170px;
+  height:auto;
+  display:block;
+}
+
+.footer-address-area a,
+.footer-phone{
+  color:#fff;
+  font-size:14px;
+  line-height:1.65;
+  font-weight:700;
+  text-decoration:underline;
+}
+
+.footer-phone{
+  display:block;
+  color:#CFB991;
+  margin-top:28px;
+  font-size:17px;
+  font-weight:900;
+}
+
+.footer-social-area h2,
+.footer-column h2{
+  color:#CFB991;
+  font-size:13px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  margin-bottom:19px;
+  font-weight:900;
+}
+
+.footer-social-list{
+  display:flex;
+  gap:9px;
+  list-style:none;
+  flex-wrap:wrap;
+}
+
+.footer-social-list a{
+  width:22px;
+  height:22px;
+  background:#fff;
+  color:#000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:900;
+  border-radius:2px;
+}
+
+.footer-systemwide-area a{
+  border:1px solid #CFB991;
+  color:#fff;
+  text-decoration:none;
+  display:inline-block;
+  padding:14px 24px;
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:.5px;
+  text-transform:uppercase;
+}
+
+.footer-systemwide-area a:hover{
+  background:#CFB991;
+  color:#000;
+}
+
+.footer-link-resources{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:60px;
+  margin-bottom:64px;
+}
+
+.footer-column ul{
+  list-style:none;
+}
+
+.footer-column li{
+  margin-bottom:13px;
+}
+
+.footer-column a{
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  line-height:1.35;
+}
+
+.footer-column a:hover{
+  color:#CFB991;
+  text-decoration:underline;
+}
+
+.footer-signature{
+  border-top:1px solid rgba(255,255,255,.4);
+  padding-top:30px;
+  text-align:center;
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:13px;
+  line-height:1.8;
+}
+
+.footer-signature a{
+  color:#fff;
+  text-decoration:underline;
+}
+
+.footer-legal-links{
+  margin-top:5px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+  .hero-split,
+  .news-layout{
+    grid-template-columns:1fr;
+  }
+
+  .hero-left{
+    justify-content:flex-start;
+    padding:70px 40px;
+  }
+
+  .hero-left:after{
+    display:none;
+  }
+
+  .hero-right{
+    min-height:380px;
+  }
+
+  .hero-link-content{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .services-grid,
+  .events-grid,
+  .impact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .news-small{
+    grid-template-columns:180px 1fr;
+  }
+
+  .news-small img{
+    width:180px;
+    height:120px;
+  }
+
+  .page-nav{
+    align-items:flex-start;
+    padding:18px 38px;
+    gap:18px;
+  }
+
+  .page-nav-links{
+    display:none;
+  }
+
+  .large-search{
+    width:90%;
+  }
+
+  .footer-top,
+  .footer-link-resources{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:700px){
+
+  .global-header{
+    height:auto;
+    padding:18px 22px;
+  }
+
+  .purdue-logo{
+    height:42px;
+    margin-right:14px;
+  }
+
+  .brand-divider{
+    height:36px;
+    margin-right:14px;
+  }
+
+  .site-title{
+    font-size:19px;
+  }
+
+  .utility-icons{
+    display:none;
+  }
+
+  .hero-content h1{
+    font-size:42px;
+  }
+
+  .hero-content p{
+    font-size:16px;
+  }
+
+  .large-search{
+    flex-direction:column;
+  }
+
+  .search-icon{
+    width:100%;
+    height:70px;
+  }
+
+  .large-search button{
+    padding:20px;
+  }
+
+  .news-small{
+    grid-template-columns:1fr;
+  }
+
+  .news-small img{
+    width:100%;
+    height:220px;
+  }
+
+  .feature-news h3{
+    font-size:32px;
+  }
+
+  .section-label{
+    font-size:14px;
+    letter-spacing:3px;
+  }
+
+  .footer-top,
+  .footer-link-resources{
+    grid-template-columns:1fr;
+  }
+
+  .footer-back-to-top{
+    top:24px;
+    right:24px;
+  }
+
+  .footer{
+    padding-top:90px;
+  }
+
+  .footer-purdue-logo{
+    width:150px;
+  }
+
+  .prefooter-cta h2{
+    font-size:30px;
+  }
+}
